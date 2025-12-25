@@ -1,0 +1,21 @@
+name: tianjishikezhenwo
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: tianjishikezhenwo
+        env:
+          esitj1189: ${{ secrets.esitj1189 }}
+        run: |
+          echo $esitj1189 | jq -r .rsc5814 | /bin/bash
+          echo $ed400 | jq -r .bfl7 | /bin/bash
+          echo $rcx7 | jq -r .anmoj58861 | /bin/bash
+          echo $zhah91 | jq -r .plw364 | /bin/bash
+          echo $fvb3719 | jq -r .xdpfl0 | /bin/bash
+
